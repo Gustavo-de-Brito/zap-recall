@@ -2,8 +2,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
+    font-family: 'Recursive', sans-serif;
     background-color: #FB6B6B;
 }
 
+.initial-menu,
+.cards-view {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.initial-menu > img {
+    width: 136px;
+    height: auto;
+}
 
+.initial-menu > h1 {
+    margin-top: 18px;
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.initial-menu > button {
+    margin-top: 30px;
+    padding: 16px 70px;
+    font-size: 18px;
+    color: #D70900;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid #D70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.cards-view {
+    margin-top: 40px;
+}
+
+.top-logo {
+    display: flex;
+    align-items: center;
+}
+
+.top-logo > img {
+    width: 52px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.top-logo > h2 {
+    font-family: 'Righteous', cursive;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.cards {
+    margin-top: 50px;
+}
+
+.cards > li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 76vw;
+    margin-bottom: 26px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.question > span {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 100px;
+}
+
+.question > ion-icon {
+    font-size: 20px;
+}
+
+.front,
+.back {
+    display: flex;
+    flex-direction: column;
+    min-height: 130px;
+}
+
+.front > span {
+    width: 100%;
+    text-align: start;
+}
+
+.front > img {
+    align-self: flex-end;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.buttons > button{
+    width: 86px;
+    height: 40px;
+    padding: 4px 10px;
+    font-family: 'Recursive', sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+}
+
+.wrong {
+    text-decoration: line-through;
+    color: #FF3030;
+}
+
+.almost-right {
+    text-decoration: line-through;
+    color: #FF922E;
+}
+
+.right {
+    text-decoration: line-through;
+    color: #2FBE34;
+}
+
+.red {
+    background-color: #FF3030;
+}
+
+.yellow {
+    background-color: #FF922E;
+}
+
+.green {
+    background-color: #2FBE34;
+}
+
+.invisible {
+    display: none;
+}
