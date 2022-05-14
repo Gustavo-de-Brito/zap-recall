@@ -40,8 +40,7 @@ body {
 }
 
 .cards-view {
-    margin-top: 40px;
-    margin-bottom: 70px;
+    margin: 40px 0 70px 0;
 }
 
 .top-logo {
@@ -63,7 +62,7 @@ body {
 }
 
 .cards {
-    margin-top: 50px;
+    margin: 50px 0 70px 0;
 }
 
 .cards > li {
@@ -164,6 +163,25 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
+}
+
+.end-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.end-message > h3 {
+    font-weight: bold;
+}
+
+.end-message > p {
+    width: 60%;
+    margin-top: 12px;
+    text-align: center;
+
 }
 
 .icons {

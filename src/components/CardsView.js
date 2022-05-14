@@ -44,7 +44,11 @@ export default function CardsView({ logo }) {
     return (
         <div className="cards-view">
             <TopLogo logo={ logo }/>
-            <CardsList cardsContent={ cardsContent } iconsList={ iconsList } setIconsList={ setIconsList } />
+            <CardsList
+                cardsContent={ cardsContent }
+                iconsList={ iconsList }
+                setIconsList={ setIconsList }
+            />
             <BottomBar qtdCards={ cardsContent.length } iconsList={ iconsList } />
         </div>
     );
