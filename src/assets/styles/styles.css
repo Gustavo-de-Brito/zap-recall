@@ -94,7 +94,8 @@ body {
     min-height: 130px;
 }
 
-.front > span {
+.front > span,
+.back > span {
     width: 100%;
     text-align: start;
 }

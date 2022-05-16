@@ -1,9 +1,9 @@
-export default function InitialMenu({ logo }) {
+export default function InitialMenu({ logo, changeView }) {
     return (
-        <div className="initial-menu invisible">
+        <div className="initial-menu">
             <img src={ logo } alt="logo-zaprecall" />
             <h1>ZapRecall</h1>
-            <button>Iniciar Recall!</button>
+            <button onClick={ changeView }>Iniciar Recall!</button>
         </div>
     );
 }
