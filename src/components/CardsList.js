@@ -1,12 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-export default function CardsList({ cardsContent, iconsList, setIconsList }) {
-    function shuffle() {
-        return Math.random() - 0.5;
-    }
-
-    const shuffledCards = cardsContent.sort(shuffle);
+export default function CardsList({ shuffledCards, iconsList, setIconsList }) {
 
     return (
         <ul className="cards">

@@ -38,6 +38,12 @@ const cardsContent = [
     },
 ];
 
+function shuffle() {
+    return Math.random() - 0.5;
+}
+
+const shuffledCards = cardsContent.sort(shuffle);
+
 export default function CardsView({ logo }) {
     const [ iconsList, setIconsList ] = React.useState( [] );
 
@@ -45,7 +51,7 @@ export default function CardsView({ logo }) {
         <div className="cards-view">
             <TopLogo logo={ logo }/>
             <CardsList
-                cardsContent={ cardsContent }
+                shuffledCards={ shuffledCards }
                 iconsList={ iconsList }
                 setIconsList={ setIconsList }
             />
